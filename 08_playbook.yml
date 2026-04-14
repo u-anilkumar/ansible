@@ -9,5 +9,5 @@
     ansible.builtin.debug:
       msg : "NAME is {{NAME}}"
       when:
-        {{AGE}} == 25
+        "{{AGE}} == 25"
   
