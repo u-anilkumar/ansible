@@ -1,0 +1,13 @@
+- name: Using When
+  hosts: local
+  connection: local
+  vars:
+    NAME ="ANIL"
+    AGE = 25
+  tasks:
+  - name: when condition
+    ansible.builtin.debug:
+      msg : "NAME is {{NAME}}"
+      when:
+        {{AGE}} == 25
+  
