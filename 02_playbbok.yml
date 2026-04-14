@@ -1,0 +1,8 @@
+#to print a message usig ansible
+- name: Print a message
+  hosts: local
+  connection: local
+  tasks:
+  - name: print a message
+    ansible.builtin.debug:
+    msg : "Good Moring"
