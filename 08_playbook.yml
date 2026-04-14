@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME ="ANIL"
+    NAME = "ANIL"
     AGE = 25
   tasks:
   - name: when condition
