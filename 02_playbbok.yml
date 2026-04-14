@@ -5,4 +5,4 @@
   tasks:
   - name: print a message
     ansible.builtin.debug:
-    msg : "Good Moring"
+      msg : "Good Morning"
