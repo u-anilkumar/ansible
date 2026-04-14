@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   become: yes
-  var_files:
+  vars_files:
   - vars_input.yml
-  vars:
-    NAME : "Anil Kumar"
-    AGE : 25
   tasks:
   - name: print variables
+    vars:
+    NAME: "SUNIL"
+    AGE: 30 
     ansible.builtin.debug:
       msg : "Name is {{NAME}}, age is {{AGE}}"
