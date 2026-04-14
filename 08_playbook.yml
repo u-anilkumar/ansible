@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars:
-    NAME = "ANIL"
-    AGE = 25
+    NAME : "ANIL"
+    AGE : 25
   tasks:
   - name: when condition
     ansible.builtin.debug:
