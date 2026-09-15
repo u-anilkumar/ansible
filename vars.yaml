@@ -3,7 +3,7 @@
   become: yes
   connection: local
   vars_files:
-    -vars_in.yaml
+  - vars_in.yaml
   tasks:
   - name: printing name and Age
     ansible.builtin.debug:
