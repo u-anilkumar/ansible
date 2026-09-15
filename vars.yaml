@@ -1,0 +1,10 @@
+- name: exploring difrent varibale
+  hosts: local
+  become: yes
+  connection: local
+  vars_files:
+    -vars_in.yaml
+  tasks:
+  - name: printing name and Age
+    ansible.biltin.debug:
+      msg: "Name is {{ NAME }} and AGE is {{AGE}}"

@@ -1,0 +1,15 @@
+- name: varibales via prompt
+  hosts: local
+  connection: local
+  become: yes
+  vars_prompt:
+    - name: NAME
+      prompt: "enter your Name"
+      private: false
+    - name: AGE
+      prompt: "enter your AGE"
+      private: true
+  tasks:
+  - name: printing prompt vars
+    ansible.builtin.debug:
+      msg: "Name is {{ NAME }} and AGE is {{ AGE }}"
