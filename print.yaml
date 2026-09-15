@@ -1,14 +1,22 @@
 - name: Printing a message
   hosts: local
   connection: local
+  become: yes
   vars:
-    NAME: "ANIL KMAR"
+    NAME: "ANIL KUMAR"
     AGE: 27
   tasks:
   - name: Priniing name
+    vars:
+      DOB: "04-07-1998"
     ansible.builtin.debug:
-      msg: "My Name is {{ NAME }}. Ageis {{ AGE }}"
+      msg: "My Name is {{ NAME }}. Age is {{ AGE }} and Date of Birth is {{ DOB }}"
   - name: installing nginx
     ansible.builtin.package:
       name: nginx
       state: installed
+  - name: starting nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      
