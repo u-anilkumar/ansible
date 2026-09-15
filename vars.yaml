@@ -6,5 +6,5 @@
     -vars_in.yaml
   tasks:
   - name: printing name and Age
-    ansible.biltin.debug:
+    ansible.builtin.debug:
       msg: "Name is {{ NAME }} and AGE is {{AGE}}"
