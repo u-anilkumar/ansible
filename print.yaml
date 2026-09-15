@@ -7,8 +7,8 @@
   tasks:
   - name: Priniing name
     ansible.builtin.debug:
-    msg: "My NAme is {{ NAME }}. Ageis {{ AGE }}"
+      msg: "My Name is {{ NAME }}. Ageis {{ AGE }}"
   - name: installing nginx
     ansible.builtin.package:
-    name: nginx
-    state: installed
+      name: nginx
+      state: installed
