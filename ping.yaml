@@ -1,0 +1,5 @@
+- name: pinging the servers
+  host: backend
+  tasks:
+  - name: pinging backend servers
+    ansible.builtin.ping:
