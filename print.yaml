@@ -1,0 +1,14 @@
+- name: Printing a message
+  hosts: local
+  connection: local
+  vars:
+    NAME: "ANIL KMAR"
+    AGE: 27
+  tasks:
+  - name: Priniing name
+    ansible.builtin.debug:
+    msg: "My NAme is {{ NAME }}. Ageis {{ AGE }}"
+  - name: installing nginx
+    ansible.builtin.package:
+    name: nginx
+    state: installed
