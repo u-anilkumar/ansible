@@ -9,5 +9,7 @@
   - name: when condition
     ansible.builtin.debug:
       msg: "NAME is {{ NAME }} and AGE is {{ AGE }}"
-    when: AGE == "25"
+    when: 
+    - AGE == "25"
+    - NAME == "ANIL KUMAR"
     
