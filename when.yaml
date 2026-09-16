@@ -4,10 +4,10 @@
   become: yes
   vars:
     NAME: "ANIL KUMAR"
-    AGE: 28
+    AGE: "28"
   tasks:
   - name: when condition
     ansible.builtin.debug:
       msg: "NAME is {{ NAME }} and AGE is {{ AGE }}"
-    when: AGE == 25
+    when: AGE == "25"
     
