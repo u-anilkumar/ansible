@@ -8,7 +8,7 @@
       name: "{{ item.name }}"
       state: "{{ item.state }}"
     loop:
-    - {name:"msyql", state:"present"}
-    - {name:"msyql", state:"absent"}
+    - {name:"mysql", state:"present"}
+    - {name:"mysql", state:"absent"}
     - {name:"nginx", state:"present"}
-    
+    when: item.name == "mysql"
