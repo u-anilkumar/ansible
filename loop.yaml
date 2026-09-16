@@ -7,8 +7,7 @@
     anisble.builtin.package:
       name: "{{item.name}}"
       state: "{{item.state}}"
-    when: 
-    - {{ item.state }} == "mysql"
+    when: '{{ item.state }} == "mysql"'
   loop:
   - {name:"msyql", state:"present"}
   - {name:"msyql", state:"absent"}
