@@ -11,4 +11,4 @@
     - {name:"msyql", state:"present"}
     - {name:"msyql", state:"absent"}
     - {name:"nginx", state:"present"}
-    when: item.name == "mysql"
+    
